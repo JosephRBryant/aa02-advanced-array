@@ -14,7 +14,13 @@ console.log(avgVal([])); // null
 */
 
 let avgVal = function(arr) {
-    // Your code here 
+  let sum = 0;
+  let avg;
+    arr.forEach((el) => {
+      sum += el;
+      avg = sum / arr.length;
+    })
+    return avg;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
