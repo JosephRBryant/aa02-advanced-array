@@ -11,7 +11,15 @@ console.log(unique(['a', 'b', 'c', 'b'])); // ['a', 'b', 'c']
 */
 
 let unique = function(array) {
-    // Your code here 
+    let newArr = [];
+
+    array.map((el) => {
+        if (!newArr.includes(el)) {
+            newArr.push(el);
+        }
+
+    })
+    return newArr;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
